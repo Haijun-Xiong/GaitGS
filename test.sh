@@ -1,0 +1,3 @@
+CUDA_VISIBLE_DEVICES=0,1,2,3 torchrun --nproc_per_node=4 opengait/main.py --cfgs ./configs/gaitgs/gaitgs.yaml --phase test --log_to_file
+CUDA_VISIBLE_DEVICES=0,1,2,3 torchrun --nproc_per_node=4 opengait/main.py --cfgs ./configs/gaitgs/gaitgs128.yaml --phase test --log_to_file
+CUDA_VISIBLE_DEVICES=0,1,2,3 torchrun --nproc_per_node=4 opengait/main.py --cfgs ./configs/gaitgs/gaitgs_OUMVLP.yaml --phase test --log_to_file
